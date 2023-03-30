@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -51,6 +51,10 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Install Dependencies & Build
+        run: |
+          npm install
+          npm run build
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -79,6 +83,12 @@ jobs:
         env:
           PREFIX_PATHS: 'true'
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
