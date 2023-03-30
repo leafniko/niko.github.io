@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     siteTitleAlt: `Niko - Gatsby Starter Portfolio`,
     siteHeadline: `Niko - Gatsby Theme from @lekoarts`,
     siteUrl: `https://twitter.com/LeafNiko`,
-    siteDescription: `日光のポートフォリオです.`,
+    siteDescription: `This is Niko's portfolio site.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
     author: `@leafniko`,
@@ -47,7 +47,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Niko - @LeafNiko`,
-        short_name: `日光`,
+        short_name: `Niko`,
         description: `This site is niko's portfolio.`,
         start_url: `/`,
         background_color: `#fff`,
