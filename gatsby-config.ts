@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
-    siteTitle: `MeltChocolate`,
-    siteTitleAlt: `Niko - Gatsby Starter Portfolio`,
-    siteHeadline: `Niko - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://twitter.com/LeafNiko`,
-    siteDescription: `This is Niko's portfolio site.`,
+    siteTitle: `Emilia`,
+    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
+    siteUrl: `https://emilia.lekoarts.de`,
+    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@leafniko`,
+    author: `@lekoarts_de`,
   },
   trailingSlash: `never`,
   plugins: [
@@ -46,9 +46,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Niko - @LeafNiko`,
-        short_name: `Niko`,
-        description: `This site is niko's portfolio.`,
+        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
+        short_name: `Emilia`,
+        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
