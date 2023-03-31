@@ -33,6 +33,22 @@ const config: GatsbyConfig = {
           {
             title: `Booth`,
             href: `https://leafniko.booth.pm/`
+          },
+          {
+            title: `Pixiv`,
+            href: `https://www.pixiv.net/users/72577`
+          },
+          {
+            title: `MelonBooks`,
+            href: `https://www.melonbooks.co.jp/circle/index.php?circle_id=110207`
+          },
+          {
+            title: `Instagram`,
+            href: `https://www.instagram.com/leaf_niko/`
+          },
+          {
+            title: `Maro`,
+            href: `https://marshmallow-qa.com/leafniko?utm_medium=url_text&utm_source=promotion`
           }
         ]
       }
