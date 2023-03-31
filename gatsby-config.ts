@@ -35,6 +35,10 @@ const config: GatsbyConfig = {
             href: `https://leafniko.booth.pm/`
           },
           {
+            title: `Skeb`,
+            href: `https://skeb.jp/@LeafNiko`
+          },
+          {
             title: `Pixiv`,
             href: `https://www.pixiv.net/users/72577`
           },
